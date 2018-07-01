@@ -5,7 +5,11 @@ std::string SimpleClass::hello(){
 }
 
 std::string SimpleClass::verify(std::string cdKey){
-	return "Validated by c++";
+	if(cdKey== "apa123"){
+		return "cdKey: " + cdKey + " ,was sucessfully verified by c++";
+	}else{
+		return "cdKey: " + cdKey + " ,was invalid according to c++";
+	}
 }
 
 void SimpleClass::helloString(std::vector<std::string> *results){
