@@ -4,6 +4,10 @@ std::string SimpleClass::hello(){
 	return "world";
 }
 
+std::string SimpleClass::verify(std::string cdKey){
+	return "Validated by c++";
+}
+
 void SimpleClass::helloString(std::vector<std::string> *results){
 	results->push_back("world");
 }

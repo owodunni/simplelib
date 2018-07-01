@@ -1,6 +1,7 @@
 package simplelib_test
 
 import (
+	"fmt"
 	"github.com/owodunni/simplelib"
 	"testing"
 )
@@ -11,6 +12,13 @@ func TestHello(t *testing.T) {
 	if s != "world" {
 		t.Error("unexpected value: ", s)
 	}
+}
+
+
+func TestVerify(t *testing.T) {
+	c := simplelib.NewSimpleClass()
+	s := c.Verify("this is my key")
+	fmt.Printf("Was key valid", s)
 }
 
 func TestHelloString(t *testing.T) {
