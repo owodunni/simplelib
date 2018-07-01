@@ -21,7 +21,7 @@ SWIG (before 3.0).
 
 These files are needed by simplelib_test.go. You need to do this each time the dependent \*.h or \*.cpp files change.
 
-    swig -go -cgo -c++ -intgosize 64 simplelib.i
+    swig3.0 -go -cgo -c++ -intgosize 64 simplelib.i
 
 To clean up the auto-generated files:
 
